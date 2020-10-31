@@ -1,0 +1,11 @@
+<div class="add-category form-group">
+    <label for="CategoryName">Category Name</label>
+    <input type="text" class="form-control" id="CategoryName"  name="CategoryName">
+
+    <label for="CategoryDescription">Category Description</label>
+    <input type="text" class="form-control" id="CategoryDescription"  name="CategoryDescription">
+
+    <label for="CategoryPhoto">Category Photo</label>
+    <input class="form-control" type="file" (change)="onChange($event)"> 
+    <button (click)="onUpload()"  class="btn btn-success">Upload</button>   
+</div>
